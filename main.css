@@ -318,3 +318,103 @@ a:hover{
 #write:hover{
   text-shadow: 5px 5px 4px #000;
 }
+@media (max-width: 768px){
+.container{
+  max-width: 90%;
+  background-color: #f0e1d1;
+  margin: 0 auto;
+}
+  .hr{
+    display: none;
+  }
+.cards{
+  display: grid;
+    flex-direction: column;
+}
+.card{
+  width:100%;
+  display: grid;
+  height: 400px;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid black;
+  margin: 10px 5px;
+}
+.card-img img{
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 210px;
+  height: 140px;
+}
+.card-left{
+  background-color: salmon;
+  border-radius: 3px;
+  margin-left: 6px;
+  text-align: center;
+  width: 140px;
+  height: 20px;
+}
+.card-right{
+  background-color: salmon;
+  border-radius: 3px;
+  text-align: center;
+  width: 40px;
+  margin-left: 18rem;
+  margin-top: -27.9px;
+  height: 20px;
+}
+#hr{
+  width: 75%;
+  margin: 7px auto;
+  color: blue;
+}
+.rupee{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+  margin-top: 15px;
+}
+.btn{
+  background-color: red;
+  color: white;
+  width: 70px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  margin-left: 16rem;
+  margin-top: -22px;
+  border-radius: 5px;
+  height: 22px;
+}
+  .intro-card{
+    display: grid;
+    flex-direction: column;
+  }
+  .card-intro{
+    border: 2px solid brown;
+    width: 100%;
+    display: grid;
+    height: 420px;
+    flex-direction: column;
+    border-radius: 12px;
+    margin: 10px auto;
+  }
+.new img{
+  width: 200px; 
+  height: 200px;
+  margin: 10px 70px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 140px;
+  border-radius: 6px;
+  margin-top: 14px;
+  /* margin-left: 5px; */
+  height: 40px;
+}
+  
+}
