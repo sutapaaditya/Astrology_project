@@ -62,6 +62,19 @@ h2{
   top: 18px;
   right: 45px;
 }
+.bar1,
+.bar2,
+.bar3{
+  background-color: black;
+  height:4px;
+  width:36px;
+  margin:3px;
+  border-radius:10px;
+}
+.nav .hamburger {
+  display:none;
+}
+
 .nav-right img{
   width: 26px;
   height: 26px;
@@ -114,7 +127,7 @@ h2{
   justify-content: space-between;
 }
 .card{
-  width: 29%;
+  width: 30%;
   display: grid;
   height: 400px;
   flex-direction: column;
@@ -268,13 +281,22 @@ a:hover{
   height: 100%;
   border-bottom: 1px solid brown;
 }
+.foot-intro{
+  display: flex;
+  justify-content: space-between;
+}
 .foot-card{
   display: grid;
   flex-direction: column;
 }
-.foot-intro{
-  display: flex;
-  justify-content: space-between;
+.foot-middle a #course{
+  text-decoration: underline;
+}
+.foot-end a #course{
+  text-decoration: underline;
+}
+#width{
+  display: none;
 }
 .foot-right{
   display: grid;
@@ -316,53 +338,53 @@ a:hover{
   cursor: pointer;
 }
 #write:hover{
-  text-shadow: 5px 5px 4px #000;
+  text-shadow: 4px 4px 4px #000;
 }
 @media (max-width: 768px){
-.container{
-  max-width: 90%;
-  background-color: #f0e1d1;
-  margin: 0 auto;
-}
+  .container{
+    max-width: 90%;
+    background-color: #f0e1d1;
+    margin: 0 auto;
+  }
   .hr{
     display: none;
   }
-.cards{
-  display: grid;
+  .cards{
+    display: grid;
     flex-direction: column;
-}
-.card{
-  width:100%;
-  display: grid;
-  height: 400px;
-  flex-direction: column;
-  border-radius: 12px;
-  border: 1px solid black;
-  margin: 10px 5px;
-}
-.card-img img{
-  border: 2px solid red;
-  border-radius: 5px;
-  width: 210px;
-  height: 140px;
-}
-.card-left{
-  background-color: salmon;
-  border-radius: 3px;
-  margin-left: 6px;
-  text-align: center;
-  width: 140px;
-  height: 20px;
-}
-.card-right{
-  background-color: salmon;
-  border-radius: 3px;
-  text-align: center;
-  width: 40px;
-  margin-left: 18rem;
-  margin-top: -27.9px;
-  height: 20px;
-}
+  }
+  .card{
+    width:100%;
+    display: grid;
+    height: 400px;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin: 10px 5px;
+  }
+  .card-img img{
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 210px;
+    height: 140px;
+  }
+  .card-left{
+    background-color: salmon;
+    border-radius: 3px;
+    margin-left: 6px;
+    text-align: center;
+    width: 140px;
+    height: 20px;
+  }
+  .card-right{
+    background-color: salmon;
+    border-radius: 3px;
+    text-align: center;
+    width: 40px;
+    margin-left: 18rem;
+    margin-top: -27.9px;
+    height: 20px;
+  }
 #hr{
   width: 75%;
   margin: 7px auto;
@@ -400,21 +422,75 @@ a:hover{
     border-radius: 12px;
     margin: 10px auto;
   }
-.new img{
-  width: 200px; 
-  height: 200px;
-  margin: 10px 70px;
-}
-.box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 140px;
-  border-radius: 6px;
-  margin-top: 14px;
-  /* margin-left: 5px; */
-  height: 40px;
-}
-  
+  .new img{
+    width: 200px; 
+    height: 200px;
+    margin: 10px 70px;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 140px;
+    border-radius: 6px;
+    margin-top: 14px;
+    height: 40px;
+  }
+  .foot-card{
+    display: grid;
+    flex-direction: row;
+    margin: 5px auto;
+  }
+  .foot-intro{
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px auto;
+  }
+  .foot-middle a h3 {
+    text-align: center; 
+    margin: 0 auto;
+  }
+  .foot-end a h3 {
+    text-align: center; 
+    margin: 0 auto;
+  }
+  #width{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }  
+  #write:hover{
+    text-shadow: none;
+  }
+.footer-step a h3{
+  text-decoration: none; 
+    border-right: 1px solid violet;
+  color: black;
+} 
+   .navbar {
+    display:none;
+  }
+  .nav {
+    height:2rem;
+  }
+  .nav .right {
+    display:none;
+  }
+  .call {
+    display:none;
+  }
+  .hamburger{
+margin-left: 18rem;
+  }
+  .nav-right .icon{
+   display: none; 
+  }
+  .nav .hamburger {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
 }
